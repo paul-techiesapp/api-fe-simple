@@ -1,0 +1,10 @@
+node_modules
+dist
+*.local
+.DS_Store
+
+# Local environment (copy .env.example → .env)
+.env
+
+# TypeScript build info
+*.tsbuildinfo
