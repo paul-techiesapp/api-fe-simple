@@ -17,7 +17,10 @@ export function BookListPage() {
 
   return (
     <div className="container">
-      <h1>Library Books</h1>
+      <div className="page-header">
+        <h1>Library Books</h1>
+        <Link className="btn" to="/books/new">+ New book</Link>
+      </div>
 
       {loading && <div className="state">Loading books…</div>}
       {error && <div className="state error">{error}</div>}

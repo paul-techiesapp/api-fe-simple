@@ -19,3 +19,16 @@ export type Book = {
   createdAt: string;
   updatedAt: string;
 };
+
+/**
+ * The fields a client sends to create a book.
+ * Mirrors lesson-02's `CreateBookDto`: title/author/categoryId are
+ * required; isbn/totalCopies are optional.
+ */
+export type NewBook = {
+  title: string;
+  author: string;
+  isbn?: string;
+  totalCopies?: number;
+  categoryId: number;
+};

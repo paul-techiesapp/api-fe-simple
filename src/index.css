@@ -110,3 +110,82 @@ h1 {
   font-size: 0.9rem;
   color: #92400e;
 }
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #e5e5e8;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.form label > span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.form label em {
+  font-weight: 400;
+  font-style: normal;
+  color: #9ca3af;
+}
+
+.form input,
+.form select {
+  padding: 0.55rem 0.7rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.form .btn {
+  justify-self: start;
+  margin-top: 0.25rem;
+}
